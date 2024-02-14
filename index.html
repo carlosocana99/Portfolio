@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1b6dd05d0b.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
     <div id="header">
-        <div class="cointainer">
+        <div class="container">
             <nav>
-                <img alt="logo" src="img/motologo.jpg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img alt="logo" src="img/c.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>FullStackDeveloper</p>
@@ -31,48 +34,165 @@
 
     </div>
     <!------------About-------------->
-    <div id="about"></div>
-    <div class="container"></div>
-    <div class="row">
-        <div class="about-col-1">
-            <img src="img/myself.jpg" alt="">
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/myself.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a passionate and experienced full-stack developer with a love for crafting efficient,
+                        scalable, and
+                        maintainable software solutions.
+                        My journey into the world of programming began years ago and since then,
+                        I've been on an exciting adventure, constantly learning and evolving.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>FullStackDeveloper</span><br>Angular</li>
+                            <li><span>Add</span><br>Node.js</li>
+                            <li><span>Add</span><br>Spring Boot</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FullStackDeveloper2</span><br>Angular2</li>
+                            <li><span>Add2</span><br>Node.js2</li>
+                            <li><span>Add2</span><br>Spring Boot2</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>FullStackDeveloper3</span><br>Angular3</li>
+                            <li><span>Add3</span><br>Node.js3</li>
+                            <li><span>Add3</span><br>Spring Boot3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>I'm a passionate and experienced full-stack developer with a love for crafting efficient, scalable, and
-                maintainable software solutions.
-                My journey into the world of programming began years ago and since then,
-                I've been on an exciting adventure, constantly learning and evolving.</p>
-            <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                    <li><span>FullStackDeveloper</span><br>Angular</li>
-                    <li><span>Add</span><br>Node.js</li>
-                    <li><span>Add</span><br>Spring Boot</li>
-                </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-                <ul>
-                    <li><span>FullStackDeveloper</span><br>Angular</li>
-                    <li><span>Add</span><br>Node.js</li>
-                    <li><span>Add</span><br>Spring Boot</li>
-                </ul>
-            </div>
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>FullStackDeveloper</span><br>Angular</li>
-                    <li><span>Add</span><br>Node.js</li>
-                    <li><span>Add</span><br>Spring Boot</li>
-                </ul>
+    </div>
+    <!------------------services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in both front-end and back-end development, proficient in a variety of technologies
+                        and frameworks. On the front-end,
+                        I'm well-versed in HTML, CSS, and JavaScript, and have a knack for creating engaging user
+                        interfaces with frameworks like React.
+                        On the back-end, I've worked with languages like Node.js and Python, utilizing frameworks such
+                        as Express and Django. Database design, API development,
+                        and cloud services are also among my areas of expertise.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Design</h2>
+                    <p>I specialize in both front-end and back-end development, proficient in a variety of technologies
+                        and frameworks. On the front-end,
+                        I'm well-versed in HTML, CSS, and JavaScript, and have a knack for creating engaging user
+                        interfaces with frameworks like React.
+                        On the back-end, I've worked with languages like Node.js and Python, utilizing frameworks such
+                        as Express and Django. Database design, API development,
+                        and cloud services are also among my areas of expertise.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I specialize in both front-end and back-end development, proficient in a variety of technologies
+                        and frameworks. On the front-end,
+                        I'm well-versed in HTML, CSS, and JavaScript, and have a knack for creating engaging user
+                        interfaces with frameworks like React.
+                        On the back-end, I've worked with languages like Node.js and Python, utilizing frameworks such
+                        as Express and Django. Database design, API development,
+                        and cloud services are also among my areas of expertise.</p>
+                    <a href="#">Learn more</a>
+                </div>
             </div>
         </div>
     </div>
 
+    <!------------------portfolio----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="img/backgtounddeveloper.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Description</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/backgtounddeveloper.jpg" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Description</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/backgtounddeveloper.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Store</h3>
+                        <p>Description</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+ <!------------------contact----------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>c.o.99@hotmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>636340168</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="img/CVActualizadoFebrero2024.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="35f9bbf0-ca37-4add-84ef-02682be56c7f">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 </body>
-
 </html>
