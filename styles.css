@@ -203,6 +203,10 @@ nav ul li a:hover::after {
     color: black;
 }
 
+.services-list div a:hover {
+    color: black;
+}
+
 /*---------------------------portfolio--------------------*/
 #portfolio {
     padding: 50px 0;
@@ -254,7 +258,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 20px;
-    color: gold;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
