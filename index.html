@@ -4,34 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <a id="logo" class="logo" href="https://google.com">Logo</a>
-
-            <ul id="nav">
-                <li>
-                    <a href="https://google.com">About</a>
-                </li>
-                <li>
-                    <a href="https://google.com">Portfolio</a>
-                </li>
-                <li>
-                    <a href="https://google.com">Contact</a>
-                </li>
-
-            </ul>
-
-
+    <div id="header">
+        <div class="cointainer">
+            <nav>
+                <img alt="logo" src="img/motologo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>FullStackDeveloper</p>
+                <h1>Hi, i'm<br><span>Carlos</span> Ocaña Lopez</h1>
+            </div>
 
         </div>
-        <h1>Hello</h1>
-    </header>
+
+    </div>
+    <!------------About-------------->
+    <div id="about"></div>
+    <div class="container"></div>
+    <div class="row">
+        <div class="about-col-1">
+            <img src="img/myself.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I'm a passionate and experienced full-stack developer with a love for crafting efficient, scalable, and
+                maintainable software solutions.
+                My journey into the world of programming began years ago and since then,
+                I've been on an exciting adventure, constantly learning and evolving.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>FullStackDeveloper</span><br>Angular</li>
+                    <li><span>Add</span><br>Node.js</li>
+                    <li><span>Add</span><br>Spring Boot</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>FullStackDeveloper</span><br>Angular</li>
+                    <li><span>Add</span><br>Node.js</li>
+                    <li><span>Add</span><br>Spring Boot</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>FullStackDeveloper</span><br>Angular</li>
+                    <li><span>Add</span><br>Node.js</li>
+                    <li><span>Add</span><br>Spring Boot</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
